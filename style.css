@@ -1,3 +1,46 @@
-body {
-    background-color:#222;
+:root {
+    --primary1:#a4375c;
+    --textColor:#fff;
+    --secondary1:#37a47f;
+}
+
+body, .navbar {
+    font-family:Roboto, sans-serif;
+    background-color:var(--primary1);
+}
+
+.navbar {
+    background:linear-gradient(0deg, rgba(79,26,44,0) 0%, rgba(79,26,44,1) 100%) !important;
+    height:8vh;
+}
+
+.nav-item {
+    font-size:1.2rem;
+}
+
+.main {
+    color:var(--textColor);
+    text-align:center;
+    margin-top:10vh;
+    font-size:1.5rem;
+}
+
+section {
+    height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+h2 {
+    font-weight:400;
+    font-size:3rem;
+}
+
+a {
+    color:var(--secondary1)
+}
+
+.card {
+    background-color:rgba(79,26,44,0.2);
 }
