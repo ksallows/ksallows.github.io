@@ -1,3 +1,49 @@
 html {
     font-family:Roboto !important;
 }
+@media (min-width:576px) { /* sm */
+    .container-sm {
+        width:400px;
+    }
+}
+
+@media (min-width:768px) { /* md */
+    .container-sm {
+        width:400px;
+    }
+}
+
+@media (min-width:992px) { /* lg */
+    .container-sm {
+        width:600px;
+    }
+    .navbar-nav {
+        margin-left:auto !important;
+    }
+    .nav-item {
+        padding-left:0 !important;
+        padding-right:0 !important;
+    }
+}
+
+@media (min-width:1200px) { /* xl */
+    .container-sm {
+        width:800px;
+    }
+}
+
+.container-sm {
+    max-width:100%;
+}
+
+.rounded-3 {
+    border-radius:10px !important;
+}
+
+.navbar {
+    background:#fff !important;
+}
+.nav-item {
+    padding-left:5px;
+    padding-right:5px;
+}
