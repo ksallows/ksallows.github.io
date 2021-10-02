@@ -84,6 +84,7 @@ textarea {min-height:200px !important;}
     font-weight:300;
     background-image:linear-gradient(360deg, #dd004b 0%, #ffc000 90%) !important;
     background-clip:text !important;
+    -webkit-background-clip:text !important;
     color:transparent !important;
     font-size:2rem;
     margin-right:0;
