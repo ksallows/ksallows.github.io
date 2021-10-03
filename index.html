@@ -21,7 +21,7 @@
             <a class="navbar-brand" href="#">Katie Sallows</a>
             <div class="navbar-nav flex-row flex-wrap justify-content-center">
                 <div class="nav-item">
-                    <a class="nav-link text-dark" href="#about">About</a>
+                    <a class="nav-link text-dark" href="#about">About Me</a>
                 </div>
                 <div class="nav-item">
                     <a class="nav-link text-dark" href="#projects">Projects</a>
@@ -35,83 +35,92 @@
             </div>
         </nav>
         <div class="hr w-100 mt-3 d-none d-lg-block"></div>
-        <div class="row align-items-start">
-            <div class="col-12 col-lg-6 mb-3 shadow p-3 rounded-3 mt-5 bg-white">
-                <a name="about"></a>
-                <h3>Hello,</h3>
-                <p>I'm Katie and I make websites. I love coding, cats, and lots of other stuff!</p>
-                <p>I was introduced to website creation when I was pretty young. Life circumstances caused me to pivot away from it, but now I'm back to what I love and ready to code!</p>
-                <p>Please <a href="#contact">contact me</a> with any questions.</p>
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-6 mb-3 shadow p-4 rounded-3 mt-5 bg-white">
+                <h3 class="grad">Hello,</h3>
+                <p class="fs-5">I'm Katie and I make websites and web apps. I love coding, design, and cats!</p>
             </div>
             <div class="col-12 col-lg-6 p-3 mt-5">
                 <img class="right img-fluid d-block" src="https://via.placeholder.com/300">
             </div>
         </div>
         <div class="row align-items-start">
-            <a name="projects"></a>
-            <h2 class="mt-5 mx-auto mb-4">Projects</h2>
-            <div class="col-12 mb-3">
+            <div class="col-12 pb-4">
+                <a name="about mb-4"></a>
+                <h2 class="mt-5 mx-auto mb-3">About Me</h2>
+                <div class="shadow p-4 rounded-3 bg-white pb-3">
+                    <p>I was introduced to web development when I was young—I redesigned my mom's art website when I was twelve and was employed by a local computer store at 16 making websites for local companies. I have always had a passion for coding as well as design, but unfortunately life circumstances caused me to delay my foray into web development until now. I've enrolled in Eleven Fifty Academy to catch up and learn industry standard skills to be a full stack developer!</p>
+                    <p class="mt-5 mb-0 logos text-center">
+                        <img src="assets/html5.svg" alt="html5">
+                        <img src="assets/css3.svg" alt="css3">
+                        <img src="assets/js.svg" alt="javaScript">
+                        <img src="assets/git.svg" alt="git">
+                        <img src="assets/firebase.svg" alt="firebase">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-start">
+            <div class="col-12 pb-4">
+                <a name="projects mb-4"></a>
+                <h2 class="mt-5 mx-auto mb-3">Projects</h2>
                 <div class="card">
-                    <a target="_blank" class="newtab newtab-2 btn" href=""><i class="bi bi-arrow-up-right"></i></a>
-                    <img src="assets/pokemonGrid.png" class="card-img-top shadow" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Pokemon Grid</h5>
+                    <div id="overlay1" class="img-overlay">
+                        <h5 class="card-title">Pokemon Grid <a href="#"><i class="ms-2 bi bi-arrow-up-right-square"></i></a></h5>
                         <p class="card-text">Used the PokeApi to grab random pokemon and display in a grid.</p>
                     </div>
+                    <img id="image1" src="assets/pokemonGrid.png" class="card-img-top shadow">
                 </div>
             </div>
         </div>
         <div class="row align-items-start">
-            <div class="col-12 col-lg-6 mb-3">
+            <div class="col-12 col-lg-6 pb-4">
                 <div class="card">
-                    <a target="_blank" class="newtab btn" href=""><i class="bi bi-arrow-up-right"></i></a>
-                    <img src="assets/holidays.png" class="card-img-top shadow" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Holidays</h5>
+                    <div id="overlay2" class="img-overlay">
+                        <h5 class="card-title">Holidays <a href="#"><i class="ms-2 bi bi-arrow-up-right-square"></i></a></h5>
                         <p class="card-text">Used the Calendarific api to get holidays for a given country and year.</p>
                     </div>
+                    <img id="image2" src="assets/holidays.png" class="card-img-top shadow">
                 </div>
             </div>
-            <div class="col-12 col-lg-6 mb-3">
+            <div class="col-12 col-lg-6 pb-4">
                 <div class="card">
-                    <a target="_blank" class="newtab btn" href=""><i class="bi bi-arrow-up-right"></i></a>
-                    <img src="assets/staticLayout.png" class="card-img-top shadow" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Static Layout</h5>
+                    <div id="overlay3" class="img-overlay">
+                        <h5 class="card-title">Static Layout <a href="#"><i class="ms-2 bi bi-arrow-up-right-square"></i></a></h5>
                         <p class="card-text">Recreate a static layout of an existing site.</p>
                     </div>
+                    <img id="image3" src="assets/staticLayout.png" class="card-img-top shadow">
                 </div>
             </div>
         </div>
         <div class="row align-items-start">
-            <div class="col-12 col-lg-6 mb-3">
+            <div class="col-12 col-lg-6 pb-4">
                 <div class="card">
-                    <a target="_blank" class="newtab btn" href=""><i class="bi bi-arrow-up-right"></i></a>
-                    <img src="assets/cssCreature.png" class="card-img-top shadow" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">CSS Creature</h5>
+                    <div id="overlay4" class="img-overlay">
+                        <h5 class="card-title">CSS Creature <a href="#"><i class="ms-2 bi bi-arrow-up-right-square"></i></a></h5>
                         <p class="card-text">Make a creature out of pure css.</p>
                     </div>
+                    <img id="image4" src="assets/cssCreature.png" class="card-img-top shadow">
                 </div>
             </div>
-            <div class="col-12 col-lg-6 mb-3">
+            <div class="col-12 col-lg-6 pb-4">
                 <div class="card">
-                    <a target="_blank" class="newtab btn" href=""><i class="bi bi-arrow-up-right"></i></a>
-                    <img src="assets/pokemonList.png" class="card-img-top shadow" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Pokemon List</h5>
+                    <div id="overlay5" class="img-overlay">
+                        <h5 class="card-title">Pokemon List <a href="#"><i class="ms-2 bi bi-arrow-up-right-square"></i></a></h5>
                         <p class="card-text">Used the PokeApi to display a paginated list of all pokemon with types.</p>
                     </div>
+                    <img id="image5" src="assets/pokemonList.png" class="card-img-top shadow">
                 </div>
             </div>
         </div>
         <div class="row align-items-start">
-            <a name="contact"></a>
-            <h2 class="mt-5 mb-3">Contact</h2>
-            <div class="col-12 col-lg-6">
-                <img class="left img-fluid d-block" src="https://via.placeholder.com/300">
+            <div class="col-12">
+                <a name="contact"></a>
+                <h2 class="mt-5 mb-3">Contact</h2>
             </div>
-            <div class="col-12 col-lg-6">
+        </div>
+        <div class="row align-items-start">
+            <div class="col-12">
                 <form action="https://formspree.io/f/mgerdpjp" method="POST">
                     <label class="mb-1 ps-2">Email</label>
                     <input type="email" class="rounded-3 border-0 form-control d-block w-100 mb-3 shadow p-3" name="_replyto">
@@ -121,9 +130,18 @@
                 </form>
             </div>
         </div>
-        <footer style="min-height:600px"></footer>
+        <footer class="row align-items-start mt-5 mb-5 py-5">
+            <div class="col-12 text-center">
+                <div class="mb-4">
+                    <a href="#" target="_blank"><img src="assets/github.svg" class="logo"></a>
+                    <a href="#" target="_blank"><img src="assets/linkedin.svg" class="logo ms-3"></a>
+                </div>
+                <p>&copy;2021 Katie Sallows</p>
+            </div>
+        </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
