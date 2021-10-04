@@ -106,12 +106,9 @@ a, footer {color:#ec552a !important}
     width:40px;
     display:inline-block;
 }
-.logos img {
-    height:50px;
-}
-.logos p {
-    margin-top:10px;
-}
+.logos img {height:50px;}
+.logos p {margin-top:10px;}
+.logos div {flex-basis:0;}
 .img-overlay {
     position:relative;
     z-index:5;
