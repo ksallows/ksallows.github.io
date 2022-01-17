@@ -108,7 +108,10 @@ a, footer {color:#ec552a !important}
 }
 .logos img {height:50px;width:50px;}
 .logos p {margin-top:10px;}
-.logos div {flex-basis:0;min-width:100px;}
+/* .logos div {flex-basis:0;min-width:100px;} */
+.logos:nth-child(2n) {
+    flex-basis:100% !important;
+}
 .img-overlay {
     position:relative;
     z-index:5;
