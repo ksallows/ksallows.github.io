@@ -1,17 +1,9 @@
-let init = () => {
-    let images = document.querySelectorAll('.card-img-top');
-    console.log(images);
-    images.forEach(element => {
-        let height = element.height;
-        let width = element.width;
-        let overlay = document.getElementById(element.id.replace('image', 'overlay'));
-        overlay.style.height = height + "px";
-        overlay.style.width = width + "px";
-        element.style.marginTop = "-" + height + "px";
+run = () => {
+    gsap.from(['.intro', '.big1', '.big2'], {
+        duration: 1,
+        opacity: 0,
+        x: 100
     })
 }
 
-window.addEventListener('DOMContentLoaded', () => {
-    init();
-})
-window.onresize = init;
+document.onload(run());

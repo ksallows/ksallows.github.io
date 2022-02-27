@@ -1,125 +1,87 @@
-html {
-    font-family:Roboto !important;
+/* reset */
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
 }
+
+:root {
+    --main: #eb18b2;
+    --secondary: #be6c3c;
+    --terterary: #9a1336;
+}
+
 body {
-    background:linear-gradient(0deg, rgba(221, 0, 0, 0.1) 0%, rgba(255,255,255,0) 100%);
-    background-attachment:fixed;
-}
-@media (min-width:576px) { /* sm */
-    .container-sm {width:400px;}
+    background-color: var(--terterary);
 }
 
-@media (min-width:768px) { /* md */
-    .container-sm {width:400px;}
-}
-
-@media (min-width:992px) { /* lg */
-    .container-sm {
-        width:600px;
-    }
-    .navbar-nav {
-        margin-left:auto !important;
-    }
-    .nav-item {
-        padding-left:0 !important;
-        padding-right:0 !important;
-    }
-    .resumebtn {
-        margin-left:10px;
-        padding-left:15px !important;
-        padding-right:15px !important;
-    }
-    .nav-item:nth-of-type(4) {
-        flex-basis:auto !important;
-    }
-    .left {
-        margin-right:auto !important;
-        margin-left:0 !important;
-    }
-    .right {
-        margin-left:auto !important;
-        margin-right:0 !important;
-    }
-}
-
-@media (min-width:1200px) { /* xl */
-    .container-sm {width:800px;}
-}
-
-.container-sm {max-width:100%;}
-.rounded-3 {border-radius:10px !important;}
-.navbar {background:transparent !important;}
-.nav-item {
-    padding-left:5px;
-    padding-right:5px;
-}
-.bi-download {margin-right:10px;}
-.nav-item:nth-of-type(4) {
-    flex-basis:100%;
-    max-width:200px !important;
-}
-textarea {min-height:200px !important;}
-.left,.right {
-    margin-left:auto;
-    margin-right:auto;
-}
-.resumebtn, .submit,.newtab {
-    background:rgb(255,192,0);
-    background:linear-gradient(326deg, #ffc000 0%, #dd004b 100%);
-    border:0;
-    font-weight:600;
-    box-shadow:0 .5rem 1rem rgba(221, 0, 0,.15) !important;
-    background-size:1px 75px;
-    transition:background 0.25s;
-}
-.resumebtn:hover, .submit:hover {background-position:100px;}
-.hr {
-    background:rgb(255,192,0);
-    height:2px;
-    background:linear-gradient(90deg, #ffc000 0%, #dd004b 100%);
-}
-.navbar-brand, h2,.grad {
+/* specific fonts */
+.intro {
+    font-family: Roboto;
+    font-size:300%;
     font-weight:300;
-    background-image:linear-gradient(360deg, #dd004b 0%, #ffc000 90%) !important;
-    background-clip:text !important;
-    -webkit-background-clip:text !important;
-    color:transparent !important;
-    font-size:2rem;
-    margin-right:0;
+    color: var(--secondary);
 }
-h2 {font-size:2.5rem;}
-h3 {font-size:1.5rem;}
-.shadow {box-shadow:0 .5rem 1rem rgba(221, 0, 0,.15) !important}
-.card {
-    border:0;
-    background:transparent;
+
+.big1, .big2 {
+    font-family: 'Roboto Condensed';
+    font-size:600%;
 }
-.card-img-top {
-    border-radius:10px !important;
-    object-fit:cover;
-    width:100%;
-    height:282px;
-    object-position:top;
+
+.big1 {
+    color: var(--main);
+    font-weight:600;
+    margin-bottom:-2%;
 }
-a, footer {color:#ec552a !important}
-.logo {
-    width:40px;
-    display:inline-block;
+
+.big2 {
+    font-weight:300;
+    color: var(--secondary);
 }
-.logos img {height:50px;width:50px;}
-.logos p {margin-top:10px;}
-/* .logos div {flex-basis:0;min-width:100px;} */
-.logos:nth-child(2n) {
-    flex-basis:100% !important;
+
+/* nav */
+nav {
+    display:flex;
+    justify-content:space-between;
+    margin:2vh auto 0;
 }
-.img-overlay {
-    position:relative;
-    z-index:5;
-    border-radius:10px;
-    background:linear-gradient(-30deg, rgba(255, 192, 0, 0.50) 0%, rgba(236, 85, 42, 0.8) 60%, rgba(221, 0, 75, 0.8) 100%);
+.nav-right {
+    display:flex;
+    justify-content:left;
+}
+.nav-right a {
+    display:block;
+    padding:10%;
+    transition: padding 0.2s, color 0.2s;
+    font-size:120%;
+}
+.nav-right a:hover {
+    padding-bottom:12%;
+    padding-top:8%;
     color:#fff;
-    box-sizing:border-box;
-    padding:20px;
 }
-.card-title {font-weight:600;font-size:2rem;}
-i {color:#fff !important;}
+nav a {
+    color:var(--main);
+    text-decoration:none;
+}
+#k {
+    font-size:200%;
+    color:var(--secondary)
+}
+.kc {
+    color:var(--main);
+    font-weight:600;
+}
+
+/* main */
+main {
+    margin: 0 auto;
+}
+
+@media only screen and (max-width:600px) {
+    main, nav {width:100%};
+}
+
+@media only screen and (min-width:601px) {
+    main, nav {width:75%};
+}
