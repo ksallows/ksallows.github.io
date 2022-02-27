@@ -3,16 +3,23 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family:Roboto;
 }
 
 :root {
-    --main: #eb18b2;
-    --secondary: #be6c3c;
-    --terterary: #9a1336;
+    --one: #c6ae2e;
+    --two: #a57941;
+    --three: #834453;
+    --dark-text: #47252d;
 }
 
 body {
-    background-color: var(--terterary);
+    background-color: var(--three);
+}
+
+
+p {
+    margin-bottom:1%;
 }
 
 /* specific fonts */
@@ -20,7 +27,8 @@ body {
     font-family: Roboto;
     font-size:300%;
     font-weight:300;
-    color: var(--secondary);
+    color: var(--two);
+    margin:0;
 }
 
 .big1, .big2 {
@@ -29,14 +37,14 @@ body {
 }
 
 .big1 {
-    color: var(--main);
+    color: var(--one);
     font-weight:600;
     margin-bottom:-2%;
 }
 
 .big2 {
     font-weight:300;
-    color: var(--secondary);
+    color: var(--two);
 }
 
 /* nav */
@@ -47,7 +55,7 @@ nav {
 }
 .nav-right {
     display:flex;
-    justify-content:left;
+    justify-content:right;
 }
 .nav-right a {
     display:block;
@@ -61,27 +69,62 @@ nav {
     color:#fff;
 }
 nav a {
-    color:var(--main);
+    color:var(--one);
     text-decoration:none;
+}
+.hash {
+    color:var(--two);
 }
 #k {
     font-size:200%;
-    color:var(--secondary)
+    color:var(--two);
+    padding:10%;
+    display:block;
 }
 .kc {
-    color:var(--main);
+    color:var(--one);
     font-weight:600;
 }
 
 /* main */
 main {
-    margin: 0 auto;
+    margin: 20vh auto 10vh;
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:800px) {
     main, nav {width:100%};
 }
 
-@media only screen and (min-width:601px) {
+@media only screen and (min-width:802px) {
     main, nav {width:75%};
+}
+
+/* headings */
+
+h1 {
+    font-size:400%;
+    margin-top:30vh;
+    color:var(--one);
+}
+
+h1 span {
+    color: var(--two);
+    font-weight:300;
+}
+
+/* box */
+
+.box {
+    background-color:var(--two);
+    color:var(--three);
+    padding:3%;
+    font-size:120%;
+    line-height:130%;
+    color:var(--dark-text);
+}
+
+/* project */
+
+.projectImg {
+    width:40%;
 }
