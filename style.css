@@ -2,21 +2,21 @@
 * {
     margin:0;
     padding:0;
-    box-sizing: border-box;
+    box-sizing:border-box;
     font-family:Roboto;
 }
 
 :root {
-    --one: #c6ae2e;
-    --two: #a57941;
-    --three: #834453;
-    --dark-text: #47252d;
+    --one:#c6ae2e;
+    --two:#a57941;
+    --three:#834453;
+    --dark-text:#47252d;
 }
 
 body {
-    background-color: var(--three);
+    background-color:var(--three);
+    overflow-x:hidden;
 }
-
 
 p {
     margin-bottom:1%;
@@ -32,19 +32,19 @@ p {
 }
 
 .big1, .big2 {
-    font-family: 'Roboto Condensed';
+    font-family:'Roboto Condensed';
     font-size:600%;
 }
 
 .big1 {
-    color: var(--one);
+    color:var(--one);
     font-weight:600;
     margin-bottom:-2%;
 }
 
 .big2 {
     font-weight:300;
-    color: var(--two);
+    color:var(--two);
 }
 
 /* nav */
@@ -60,7 +60,7 @@ nav {
 .nav-right a {
     display:block;
     padding:10%;
-    transition: padding 0.2s, color 0.2s;
+    transition:padding 0.2s, color 0.2s;
     font-size:120%;
 }
 .nav-right a:hover {
@@ -80,15 +80,22 @@ nav a {
     color:var(--two);
     padding:10%;
     display:block;
+    transition:letter-spacing 0.2s, color 0.2s;
+    font-family:'Roboto Mono';
+    font-weight:100;
+}
+#k:hover {
+    letter-spacing:3px;
+    color:#fff;
 }
 .kc {
     color:var(--one);
-    font-weight:600;
+    font-weight:500;
 }
 
 /* main */
 main {
-    margin: 20vh auto 10vh;
+    margin:20vh auto 10vh;
 }
 
 @media only screen and (max-width:800px) {
@@ -108,7 +115,7 @@ h1 {
 }
 
 h1 span {
-    color: var(--two);
+    color:var(--two);
     font-weight:300;
 }
 
@@ -116,15 +123,87 @@ h1 span {
 
 .box {
     background-color:var(--two);
-    color:var(--three);
     padding:3%;
     font-size:120%;
-    line-height:130%;
+    line-height:140%;
     color:var(--dark-text);
 }
 
 /* project */
 
+.projectContainer {
+    display:flex;
+    margin:1rem 0 0;
+    align-items:center;
+}
+
+.projectBox {
+    
+    flex-grow:1;
+    flex-basis:35%;
+    left:-3rem;
+    position:relative;
+}
+
+.projectTitle {
+    font-size:400%;
+    font-family:'Roboto Mono', monospace;
+    color:var(--one);
+    line-height:100%;
+    margin-bottom:1rem;
+    text-align:right;
+}
+
+.projectDesc {
+    background-color:var(--two);
+    color:var(--dark-text);
+    padding:3%;
+    line-height:150%;
+}
+
 .projectImg {
-    width:40%;
+    box-shadow: 10px 10px var(--two);
+    flex-grow:2;
+    flex-basis:65%;
+}
+
+.projectIcons {
+    margin-top:0.5rem;
+    display:flex;
+    justify-content:right;
+    gap:5px;
+}
+
+.iconButton {
+    display:flex;
+    background-color:var(--one);
+    padding:5px 15px;
+    align-items:center;
+    color:var(--three);
+    text-decoration:none;
+    transition:background-color 0.2s;
+}
+
+.iconButton:hover {
+    background-color:#fff;
+}
+
+.iconButton span {
+    margin-left:5px;
+    font-family:'Roboto Mono', monospace;
+}
+
+.tag {
+    background-color:var(--one);
+    color:var(--three);
+    display:inline-block;
+    font-family:'Roboto Mono', monospace;
+    padding:0 0.2rem;
+    margin-right:0.2rem;
+}
+
+/* footer */
+
+footer {
+    height: 30vh;
 }
