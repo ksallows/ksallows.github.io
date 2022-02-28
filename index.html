@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Katie Sallows | Web Developer</title>
-    <script src="https://kit.fontawesome.com/25c019ad17.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto+Mono:wght@100;500&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/25c019ad17.js' crossorigin='anonymous'></script>
+    <link rel='stylesheet' href='style.css' />
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <link href='https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto+Mono:wght@100;300;400;500&family=Roboto:wght@100;300;400;500;700&display=swap' rel='stylesheet'>
     <!--
         Roboto: 100, 300, 400, 500, 700
         Mono: 100, 500
@@ -33,45 +33,98 @@
         <p class='intro'>hi, i'm</p>
         <p class='big1'>Katie Sallows</p>
         <p class='big2'>web developer</p>
-
         <a name='about'></a>
         <h1 class='inLeft'><span>#</span>about</h1>
         <div class='box inRight' id='aboutBox'>
-            <p>I was introduced to web development when I was young—I redesigned my mom's art website when I was twelve and was employed by a local computer store at 16 making websites for local companies. I have always had a passion for coding as well as design, but unfortunately life circumstances caused me to delay my foray into web development until now. I've enrolled in Eleven Fifty Academy to brush up and learn industry standard skills.</p>
+            <p>Hey, I'm Katie. I've been coding a long time—I began learning HTML and CSS at the age of 12. At 15 I was contracted to make websites for local companies in my small hometown. Unfortunately I developed a lot of imposter syndrome about coding. I thought I wasn't smart enough to make it my career, so for a few years I didn't code.</p>
+            <p style='margin-bottom:0'>In 2021 I enrolled in Eleven Fifty Academy to relearn web development and pick up the latest trends and frameworks. It was an amazing experience and I came out of it feeling renewed in my abilities. At this point I know I can learn anything I set my mind to.</p>
         </div>
 
         <a name='projects'></a>
         <h1 class='inLeft'><span>#</span>projects</h1>
         <div class='projectContainer'>
-            <!-- <img class='projectImg' src='assets/fol.png' /> -->
-            <img class='projectImg' src='https://via.placeholder.com/150x100/7f0d28/808080?Text=Digital.com' />
+            <div class='projectImg inLeft'>
+                <img src='assets/fol.png' class='img' />
+            </div>
             <div class='projectBox inRight'>
                 <div class='projectTitle'>Friends of Legends</div>
                 <div class='projectDesc'>An app to find other people to play League of Legends with. Grab your top champions from the Riot API, set your favorite roles, game modes, etc, and find other players with a search for that criteria.<br /><br />
-                    <span class='tag'>React</span><span class='tag'>Mantine</span>
-                    <span class='tag'>PostgreSQL</span><span class='tag'>Express.js</span>
+                    <span class='tag'>React</span><span class='tag'>Mantine</span><span class='tag'>PostgreSQL</span><span class='tag'>Express.js</span><span class='tag'>Riot API</span>
                 </div>
                 <div class='projectIcons'>
-                    <a class='iconButton' href='#'>
-                        <i class="fa-brands fa-github"></i><span>client</span>
+                    <a class='iconButton' href='https://github.com/ksallows/FriendsOfLegends_client' target='blank'>
+                        <i class='fa-brands fa-github'></i><span>Client</span>
                     </a>
-                    <a class='iconButton' href='#'>
-                        <i class="fa-brands fa-github"></i><span>server</span>
+                    <a class='iconButton' href='https://github.com/ksallows/FriendsOfLegends_server' target='blank'>
+                        <i class='fa-brands fa-github'></i><span>Server</span>
                     </a>
-                    <a class='iconButton' href='#'>
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    <a class='iconButton' href='https://ks-friendsoflegends-client.herokuapp.com/' target='blank'>
+                        <i class='fa-solid fa-arrow-up-right-from-square'></i>
                     </a>
                 </div>
             </div>
         </div>
 
+        <div class='projectContainer mt-3 mobile-reverse'>
+            <div class='projectBox projectBox-reverse inLeft'>
+                <div class='projectTitle projectTitle-reverse'>InstaPet</div>
+                <div class='projectDesc'>Upload pictures of your pet, browse other user's pets, 'like' pictures, and view yours and others profiles. Group project with Gabrielle Ford.<br /><br />
+                    <span class='tag'>React</span><span class='tag'>PostgreSQL</span><span class='tag'>Express.js</span>
+                </div>
+                <div class='projectIcons projectIcons-reverse'>
+                    <a class='iconButton' href='https://github.com/gabrielleford/blueBadgeClient' target='blank'>
+                        <i class='fa-brands fa-github'></i><span>Client</span>
+                    </a>
+                    <a class='iconButton' href='https://github.com/gabrielleford/blueBadgeServer' target='blank'>
+                        <i class='fa-brands fa-github'></i><span>Server</span>
+                    </a>
+                    <a class='iconButton' href='https://gfks-instapet-client.herokuapp.com/' target='blank'>
+                        <i class='fa-solid fa-arrow-up-right-from-square'></i>
+                    </a>
+                </div>
+            </div>
+            <div class='projectImg inRight'>
+                <img src='assets/instapet.png' class='img' />
+            </div>
+
+        </div>
+        <div class='projectContainer mt-3'>
+            <div class='projectImg inLeft'>
+                <img src='assets/72.png' class='img' />
+            </div>
+            <div class='projectBox inRight'>
+                <div class='projectTitle'>72 Hour Project</div>
+                <div class='projectDesc'>Together with my partner Gabrielle Ford, utilized React and three APIs to show the user’s weather, satellite imagery, and local events<br /><br />
+                    <span class='tag'>React</span><span class='tag'>NASA API</span><span class='tag'>Ticketmaster API</span><span class='tag'>OpenWeatherMap API</span>
+                </div>
+                <div class='projectIcons'>
+                    <a class='iconButton' href='https://github.com/ksallows/72hourproject' target='blank'>
+                        <i class='fa-brands fa-github'></i>
+                    </a>
+                    <a class='iconButton' href='https://ksgf-72hourproject.herokuapp.com/' target='blank'>
+                        <i class='fa-solid fa-arrow-up-right-from-square'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <a name='contact'></a>
+        <h1 class='inLeft'><span>#</span>contact</h1>
+        <form action='https://formspree.io/f/mgerdpjp' method='POST' class='inBottom'>
+            <label class=''>Email</label>
+            <input type='email' name='_replyto'>
+            <label class=''>Message</label>
+            <textarea class='' name='message'></textarea>
+            <button type='submit' class=''>Send</button>
+        </form>
+
     </main>
     <footer>
 
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/ScrollTrigger.min.js"></script>
-    <script src="script.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/ScrollTrigger.min.js'></script>
+    <script src='script.js'></script>
 </body>
 
 </html>
