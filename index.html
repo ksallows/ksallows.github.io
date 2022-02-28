@@ -1,179 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Katie Sallows | Web Developer</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src='https://kit.fontawesome.com/25c019ad17.js' crossorigin='anonymous'></script>
+    <link rel='stylesheet' href='style.css' />
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <link href='https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto+Mono:wght@100;300;400;500&family=Roboto:wght@100;300;400;500;700&display=swap' rel='stylesheet'>
 </head>
 
 <body>
-    <div class="container-sm">
-        <nav class="navbar navbar-light navbar-expand-lg flex-column flex-lg-row">
-            <a class="navbar-brand" href="#">Katie Sallows</a>
-            <div class="navbar-nav flex-row flex-wrap justify-content-center">
-                <div class="nav-item">
-                    <a class="nav-link text-dark" href="#about">About Me</a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link text-dark" href="#projects">Projects</a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link text-dark" href="#contact">Contact</a>
-                </div>
-                <div class="nav-item">
-                    <a target="_blank" class="resumebtn nav-link text-light btn btn-primary" href="assets/resume.pdf"><i class="bi-download"></i> Resume</a>
-                </div>
-            </div>
-        </nav>
-        <div class="hr w-100 mt-3 d-none d-lg-block"></div>
-        <div class="row align-items-center">
-            <div class="col-12 col-lg-7 mb-3 shadow p-4 rounded-3 mt-5 bg-white">
-                <h3 class="grad">Hello,</h3>
-                <p class="fs-5">I'm Katie and I make websites and web apps. I love coding, design, and cats!</p>
-            </div>
-            <div class="col-12 col-lg-4 p-3 mt-5 offset-lg-1">
-                <img class="right img-fluid d-block photo" src="assets/photo.png">
-            </div>
+    <nav>
+        <div class='nav-left'>
+            <a id='k' href='/'>&lt;<span class='kc'>ks</span>/&gt;</a>
         </div>
-        <div class="row align-items-start">
-            <div class="col-12 pb-4">
-                <a name="about"></a>
-                <h2 class="mt-5 mx-auto mb-3">About Me</h2>
-                <div class="shadow p-4 rounded-3 bg-white pb-3">
-                    <p>I was introduced to web development when I was young—I redesigned my mom's art website when I was twelve and was employed by a local computer store at 16 making websites for local companies. I have always had a passion for coding as well as design, but unfortunately life circumstances caused me to delay my foray into web development until now. I've enrolled in Eleven Fifty Academy to brush up and learn industry standard skills.</p>
-                    <hr class="mt-5 mb-4" />
-                    <div id="logos" class="logos mt-4 mb-0 d-flex flex-wrap justify-content-evenly">
-                        <div class="text-center">
-                            <img src="assets/html5.svg" alt="html5">
-                            <p>HTML 5</p>
-                        </div>
-                        <div class="text-center">
-                            <img src="assets/css3.svg" alt="css3">
-                            <p>CSS 3</p>
-                        </div>
-                        <div class="text-center">
-                            <img src="assets/bootstrap.svg" alt="css3">
-                            <p>Bootstrap 5</p>
-                        </div>
-                        <div class="text-center">
-                            <img src="assets/js.svg" alt="javaScript">
-                            <p>JavaScript</p>
-                        </div>
-                        <div class="text-center">
-                            <img src="assets/git.svg" alt="git">
-                            <p>Git</p>
-                        </div>
-                        <div class="text-center">
-                            <img src="assets/firebase.svg" alt="firebase">
-                            <p>Firebase</p>
-                        </div>
-                        <div class="text-center">
-                            <img src="assets/php.svg" alt="php">
-                            <p>PHP</p>
-                        </div>
-                        <div class="text-center">
-                            <img src="assets/react.svg" alt="react">
-                            <p>React</p>
-                        </div>
-                        <div class="text-center">
-                            <img src="assets/nodejs.svg" alt="nodeJS">
-                            <p>Node.js</p>
-                        </div>
-                    </div>
+        <div class='nav-right'>
+            <a href='#about'><span class='hash'>#</span>about</a>
+            <a href='#projects'><span class='hash'>#</span>projects</a>
+            <a href='#contact'><span class='hash'>#</span>contact</a>
+        </div>
+    </nav>
+    <aside>
+        <a href='assets/resume.pdf' target='blank'><i class="fa-solid fa-file-lines"></i></a>
+        <a href='https://linkedin.com/in/katie-sallows' target='blank'><i class='fa-brands fa-linkedin'></i></a>
+        <a href='https://github.com/ksallows' target='blank'><i class='fa-brands fa-github'></i></a>
+    </aside>
+    <main>
+        <p class='intro'>hi, i'm</p>
+        <p class='big1'>Katie Sallows</p>
+        <p class='big2'>web developer</p>
+        <a name='about'></a>
+        <h1 class='inLeft'><span>#</span>about</h1>
+        <div class='box inRight' id='aboutBox'>
+            <p>Hey, I'm Katie. I've been coding a long time—I began learning HTML and CSS at the age of 12. At 15 I was contracted to make websites for local companies in my small hometown. Unfortunately I developed a lot of imposter syndrome about coding. I thought I wasn't smart enough to make it my career, so for a few years I didn't code.</p>
+            <p style='margin-bottom:0'>In 2021 I enrolled in Eleven Fifty Academy to relearn web development and pick up the latest trends and frameworks. It was an amazing experience and I came out of it feeling renewed in my abilities. At this point I know I can learn anything I set my mind to.</p>
+        </div>
+
+        <a name='projects'></a>
+        <h1 class='inLeft'><span>#</span>projects</h1>
+        <div class='projectContainer'>
+            <div class='projectImg inLeft'>
+                <img src='assets/fol.png' class='img' />
+            </div>
+            <div class='projectBox inRight'>
+                <div class='projectTitle'>Friends of Legends</div>
+                <div class='projectDesc'>An app to find other people to play League of Legends with. Grab your top champions from the Riot API, set your favorite roles, game modes, etc, and find other players with a search for that criteria.<br /><br />
+                    <span class='tag'>React</span><span class='tag'>Mantine</span><span class='tag'>PostgreSQL</span><span class='tag'>Express.js</span><span class='tag'>Riot API</span>
+                </div>
+                <div class='projectIcons'>
+                    <a class='iconButton' href='https://github.com/ksallows/FriendsOfLegends_client' target='blank'>
+                        <i class='fa-brands fa-github'></i><span>Client</span>
+                    </a>
+                    <a class='iconButton' href='https://github.com/ksallows/FriendsOfLegends_server' target='blank'>
+                        <i class='fa-brands fa-github'></i><span>Server</span>
+                    </a>
+                    <a class='iconButton' href='https://ks-friendsoflegends-client.herokuapp.com/' target='blank'>
+                        <i class='fa-solid fa-arrow-up-right-from-square'></i>
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="row align-items-start">
-            <div class="col-12 pb-4">
-                <a name="projects"></a>
-                <h2 class="mt-5 mx-auto mb-3">Projects</h2>
-                <div class="card">
-                    <div id="overlay1" class="img-overlay">
-                        <h5 class="card-title">Friends of Legends <a href="https://ks-friendsoflegends-client.herokuapp.com/" target="_blank"><i class="ms-2 bi bi-arrow-up-right-square"></i></a></h5>
-                        <p class="card-text">An app to find other people to play League of Legends with. Grab your top champions from the Riot API, set your favorite roles, game modes, etc, and find other players with a search for that criteria.</p>
-                    </div>
-                    <img id="image1" src="assets/fol.png" class="card-img-top shadow">
+
+        <div class='projectContainer mt-3 mobile-reverse'>
+            <div class='projectBox projectBox-reverse inLeft'>
+                <div class='projectTitle projectTitle-reverse'>InstaPet</div>
+                <div class='projectDesc'>Upload pictures of your pet, browse other user's pets, 'like' pictures, and view yours and others profiles. Group project with Gabrielle Ford.<br /><br />
+                    <span class='tag'>React</span><span class='tag'>PostgreSQL</span><span class='tag'>Express.js</span>
+                </div>
+                <div class='projectIcons projectIcons-reverse'>
+                    <a class='iconButton' href='https://github.com/gabrielleford/blueBadgeClient' target='blank'>
+                        <i class='fa-brands fa-github'></i><span>Client</span>
+                    </a>
+                    <a class='iconButton' href='https://github.com/gabrielleford/blueBadgeServer' target='blank'>
+                        <i class='fa-brands fa-github'></i><span>Server</span>
+                    </a>
+                    <a class='iconButton' href='https://gfks-instapet-client.herokuapp.com/' target='blank'>
+                        <i class='fa-solid fa-arrow-up-right-from-square'></i>
+                    </a>
+                </div>
+            </div>
+            <div class='projectImg inRight'>
+                <img src='assets/instapet.png' class='img' />
+            </div>
+
+        </div>
+        <div class='projectContainer mt-3'>
+            <div class='projectImg inLeft'>
+                <img src='assets/72.png' class='img' />
+            </div>
+            <div class='projectBox inRight'>
+                <div class='projectTitle'>72 Hour Project</div>
+                <div class='projectDesc'>Together with my partner Gabrielle Ford, utilized React and three APIs to show the user’s weather, satellite imagery, and local events<br /><br />
+                    <span class='tag'>React</span><span class='tag'>NASA API</span><span class='tag'>Ticketmaster API</span><span class='tag'>OpenWeatherMap API</span>
+                </div>
+                <div class='projectIcons'>
+                    <a class='iconButton' href='https://github.com/ksallows/72hourproject' target='blank'>
+                        <i class='fa-brands fa-github'></i>
+                    </a>
+                    <a class='iconButton' href='https://ksgf-72hourproject.herokuapp.com/' target='blank'>
+                        <i class='fa-solid fa-arrow-up-right-from-square'></i>
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="row align-items-start">
-            <div class="col-12 col-lg-6 pb-4">
-                <div class="card">
-                    <div id="overlay2" class="img-overlay">
-                        <h5 class="card-title">InstaPet <a href="http://gfks-instapet-client.herokuapp.com/" target="_blank"><i class="ms-2 bi bi-arrow-up-right-square"></i></a></h5>
-                        <p class="card-text">Upload pictures of your pet, browse other user's pets, and "like" them</p>
-                    </div>
-                    <img id="image2" src="assets/instapet.png" class="card-img-top shadow">
-                </div>
-            </div>
-            <div class="col-12 col-lg-6 pb-4">
-                <div class="card">
-                    <div id="overlay3" class="img-overlay">
-                        <h5 class="card-title">Static Layout <a href="https://ksallows.github.io/Static_Layout/" target="_blank"><i class="ms-2 bi bi-arrow-up-right-square"></i></a></h5>
-                        <p class="card-text">Recreate a static layout of an existing site.</p>
-                    </div>
-                    <img id="image3" src="assets/staticLayout.png" class="card-img-top shadow">
-                </div>
-            </div>
-        </div>
-        <div class="row align-items-start">
-            <div class="col-12 col-lg-6 pb-4">
-                <div class="card">
-                    <div id="overlay4" class="img-overlay">
-                        <h5 class="card-title">Pokemon Grid <a href="https://ksallows.github.io/API_Project_1/" target="_blank"><i class="ms-2 bi bi-arrow-up-right-square"></i></a></h5>
-                        <p class="card-text">Used the PokeApi to grab random pokemon and display in a grid.</p>
-                    </div>
-                    <img id="image4" src="assets/pokemonGrid.png" class="card-img-top shadow">
-                </div>
-            </div>
-            <div class="col-12 col-lg-6 pb-4">
-                <div class="card">
-                    <div id="overlay5" class="img-overlay">
-                        <h5 class="card-title">Pokemon List <a href="https://ksallows.github.io/API_Project_2/" target="_blank"><i class="ms-2 bi bi-arrow-up-right-square"></i></a></h5>
-                        <p class="card-text">Used the PokeApi to display a paginated list of all pokemon with types.</p>
-                    </div>
-                    <img id="image5" src="assets/pokemonList.png" class="card-img-top shadow">
-                </div>
-            </div>
-        </div>
-        <div class="row align-items-start">
-            <div class="col-12">
-                <a name="contact"></a>
-                <h2 class="mt-5 mb-3">Contact</h2>
-            </div>
-        </div>
-        <div class="row align-items-start">
-            <div class="col-12">
-                <form action="https://formspree.io/f/mgerdpjp" method="POST">
-                    <label class="mb-1 ps-2">Email</label>
-                    <input type="email" class="rounded-3 border-0 form-control d-block w-100 mb-3 shadow p-3" name="_replyto">
-                    <label class="mb-1 ps-2">Message</label>
-                    <textarea class="rounded-3 border-0 form-control mb-3 shadow p-3" name="message"></textarea>
-                    <button type="submit" class="submit btn btn-primary mt-2 mx-auto d-block px-4">Send</button>
-                </form>
-            </div>
-        </div>
-        <footer class="row align-items-start mt-5 mb-5 py-5">
-            <div class="col-12 text-center">
-                <div class="mb-4">
-                    <a href="https://github.com/ksallows" target="_blank"><img src="assets/github.svg" class="logo"></a>
-                    <a href="https://www.linkedin.com/in/katie-sallows-b7b6b6222/" target="_blank"><img src="assets/linkedin.svg" class="logo ms-3"></a>
-                </div>
-                <p>&copy;2021 Katie Sallows</p>
-            </div>
-        </footer>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+
+        <a name='contact'></a>
+        <h1 class='inLeft'><span>#</span>contact</h1>
+        <form action='https://formspree.io/f/mgerdpjp' method='POST' class='inBottom'>
+            <label class=''>Email</label>
+            <input type='email' name='_replyto'>
+            <label class=''>Message</label>
+            <textarea class='' name='message'></textarea>
+            <button type='submit' class=''>Send</button>
+        </form>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/ScrollTrigger.min.js'></script>
+    <script src='script.js'></script>
 </body>
 
 </html>
