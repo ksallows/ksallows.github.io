@@ -8,7 +8,6 @@ text.forEach((element, index) => {
         opacity: 0,
         x: (index + 1) * 150
     })
-    console.log(index);
 })
 
 gsap.utils.toArray('.inRight').forEach(element => {
@@ -40,7 +39,7 @@ gsap.from('.inBottom', {
         trigger: '.inBottom',
         start: 'top bottom'
     },
-    duration: 1,
+    duration: 0.5,
     opacity: 0,
     y: 500
 })
