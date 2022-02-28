@@ -340,8 +340,9 @@ aside a {
     button {
         width:50%;
     }
-    .nav-right a, .nav-right a:hover {
-        padding:5%;
+    .nav-right a, .nav-right a:hover, #k {
+        padding:5px;
+        font-size:100%;
     }
     .big1, .big2 {
         font-size:350%;
@@ -349,5 +350,10 @@ aside a {
     .intro {
         font-size:200%;
     }
-
+    html, body {
+        overflow-x: hidden;
+      }
+    body {
+        position: relative
+    }
 }
