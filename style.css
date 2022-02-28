@@ -290,6 +290,24 @@ footer {
     margin-top:3rem;
 }
 
+/* social */
+
+aside {
+    position:fixed;
+    left:2vw;
+    bottom:2vh;
+    display:flex;
+    flex-direction:column;
+    gap:1vh;
+    align-items:center;
+}
+
+aside a {
+    display:block;
+    font-size:200%;
+    color:var(--one);
+}
+
 /* mobile adjustments */
 
 @media only screen and (max-width:800px) {
