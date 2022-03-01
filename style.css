@@ -28,7 +28,7 @@ p {
 
 .intro {
     font-weight: 400;
-    color: var(--two);
+    color: var(--one);
     font-family: 'Roboto Mono';
     margin: 0;
     font-size: 300%;
@@ -41,14 +41,14 @@ p {
 }
 
 .big1 {
-    color: var(--one);
+    color: #fff;
     font-weight: 600;
     margin-bottom: -2%;
 }
 
 .big2 {
     font-weight: 400;
-    color: var(--two);
+    color: var(--one);
     font-family: 'Roboto Mono';
 }
 
@@ -180,6 +180,9 @@ h1 span {
     line-height: 100%;
     margin-bottom: 1rem;
     text-align: right;
+    text-shadow: 2px 2px #fff;
+    color: #fff;
+    text-shadow: 4px 4px var(--two);
 }
 
 .projectDesc {
@@ -187,6 +190,7 @@ h1 span {
     color: var(--dark-text);
     padding: 3%;
     line-height: 150%;
+    box-shadow: 10px 10px var(--one);
 }
 
 .projectImg {
@@ -209,7 +213,7 @@ h1 span {
 }
 
 .projectIcons {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     display: flex;
     justify-content: right;
     gap: 5px;
@@ -331,13 +335,6 @@ aside {
     gap: 1vh;
     align-items: left;
 }
-
-
-/* aside a {
-    display:block;
-    font-size:200%;
-    color:var(--one);
-} */
 
 a.expand {
     position: relative;
