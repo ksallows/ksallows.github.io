@@ -44,6 +44,7 @@ p {
     color: #fff;
     font-weight: 600;
     margin-bottom: -2%;
+    text-shadow: 6px 6px var(--two);
 }
 
 .big2 {
@@ -176,11 +177,9 @@ h1 span {
 .projectTitle {
     font-size: 400%;
     font-family: 'Roboto Mono', monospace;
-    color: var(--one);
     line-height: 100%;
     margin-bottom: 1rem;
     text-align: right;
-    text-shadow: 2px 2px #fff;
     color: #fff;
     text-shadow: 4px 4px var(--two);
 }
